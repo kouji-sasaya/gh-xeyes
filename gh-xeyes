@@ -18,8 +18,6 @@ if [ "${COMMAND}" = "setup" ]; then
   docker compose -f "${TOP}/docker-compose.yml" build
   exit 0
 fi
-
-
 if [ "${COMMAND}" = "start" ]; then
   shift
   docker compose -f "${TOP}/docker-compose.yml" run -d -q --rm gh-xeyes
