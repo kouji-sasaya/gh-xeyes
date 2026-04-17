@@ -10,6 +10,7 @@ if [ $# -eq 0 ];then
   echo "Usage: ${GH_COMMAND} [command]"
   echo " ${GH_COMMAND} setup     # Build the Docker image"
   echo " ${GH_COMMAND} start     # Start a xeyes form the Docker container"
+  echo " ${GH_COMMAND} shell     # Shell into the Docker container"
   exit
 fi
 
