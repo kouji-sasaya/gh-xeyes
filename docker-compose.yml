@@ -8,6 +8,7 @@ services:
     working_dir: /workdir
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - .:/workdir
     tty: true
     stdin_open: true
     environment:
